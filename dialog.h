@@ -5,6 +5,7 @@
 #include <QPushButton>
 #include <QLineEdit>
 #include <QGridLayout>
+#include <QColorDialog>
 class Dialog : public QDialog
 {
     Q_OBJECT
@@ -17,9 +18,12 @@ public:
     QPushButton *fileBtn;
     QLineEdit *fileLineEdit;
     QGridLayout *mainLayout;
+    QPushButton *colorBtn;
+    QFrame * colorFrame;
 
  private slots:
     void showFile();
+    void showColor();
 };
 
 #endif // DIALOG_H
